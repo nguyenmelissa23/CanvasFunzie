@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF7E58BA2078517C007ECCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58B92078517C007ECCE4 /* AppDelegate.swift */; };
+		FF7E58BC2078517C007ECCE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58BB2078517C007ECCE4 /* ViewController.swift */; };
+		FF7E58BF2078517C007ECCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E58BD2078517C007ECCE4 /* Main.storyboard */; };
+		FF7E58C12078517D007ECCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7E58C02078517D007ECCE4 /* Assets.xcassets */; };
+		FF7E58C42078517D007ECCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E58C22078517D007ECCE4 /* LaunchScreen.storyboard */; };
+		FF7E58CF2078517D007ECCE4 /* CanvasFunzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58CE2078517D007ECCE4 /* CanvasFunzieTests.swift */; };
+		FF7E58DA2078517D007ECCE4 /* CanvasFunzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58D92078517D007ECCE4 /* CanvasFunzieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF7E58CB2078517D007ECCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF7E58AE2078517C007ECCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7E58B52078517C007ECCE4;
+			remoteInfo = CanvasFunzie;
+		};
+		FF7E58D62078517D007ECCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF7E58AE2078517C007ECCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7E58B52078517C007ECCE4;
+			remoteInfo = CanvasFunzie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF7E58B62078517C007ECCE4 /* CanvasFunzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasFunzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7E58B92078517C007ECCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF7E58BB2078517C007ECCE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF7E58BE2078517C007ECCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF7E58C02078517D007ECCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF7E58C32078517D007ECCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF7E58C52078517D007ECCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7E58CA2078517D007ECCE4 /* CanvasFunzieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasFunzieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7E58CE2078517D007ECCE4 /* CanvasFunzieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasFunzieTests.swift; sourceTree = "<group>"; };
+		FF7E58D02078517D007ECCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7E58D52078517D007ECCE4 /* CanvasFunzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasFunzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7E58D92078517D007ECCE4 /* CanvasFunzieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasFunzieUITests.swift; sourceTree = "<group>"; };
+		FF7E58DB2078517D007ECCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF7E58B32078517C007ECCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E58C72078517D007ECCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E58D22078517D007ECCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF7E58AD2078517C007ECCE4 = {
+			isa = PBXGroup;
+			children = (
+				FF7E58B82078517C007ECCE4 /* CanvasFunzie */,
+				FF7E58CD2078517D007ECCE4 /* CanvasFunzieTests */,
+				FF7E58D82078517D007ECCE4 /* CanvasFunzieUITests */,
+				FF7E58B72078517C007ECCE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF7E58B72078517C007ECCE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF7E58B62078517C007ECCE4 /* CanvasFunzie.app */,
+				FF7E58CA2078517D007ECCE4 /* CanvasFunzieTests.xctest */,
+				FF7E58D52078517D007ECCE4 /* CanvasFunzieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF7E58B82078517C007ECCE4 /* CanvasFunzie */ = {
+			isa = PBXGroup;
+			children = (
+				FF7E58B92078517C007ECCE4 /* AppDelegate.swift */,
+				FF7E58BB2078517C007ECCE4 /* ViewController.swift */,
+				FF7E58BD2078517C007ECCE4 /* Main.storyboard */,
+				FF7E58C02078517D007ECCE4 /* Assets.xcassets */,
+				FF7E58C22078517D007ECCE4 /* LaunchScreen.storyboard */,
+				FF7E58C52078517D007ECCE4 /* Info.plist */,
+			);
+			path = CanvasFunzie;
+			sourceTree = "<group>";
+		};
+		FF7E58CD2078517D007ECCE4 /* CanvasFunzieTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF7E58CE2078517D007ECCE4 /* CanvasFunzieTests.swift */,
+				FF7E58D02078517D007ECCE4 /* Info.plist */,
+			);
+			path = CanvasFunzieTests;
+			sourceTree = "<group>";
+		};
+		FF7E58D82078517D007ECCE4 /* CanvasFunzieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF7E58D92078517D007ECCE4 /* CanvasFunzieUITests.swift */,
+				FF7E58DB2078517D007ECCE4 /* Info.plist */,
+			);
+			path = CanvasFunzieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF7E58B52078517C007ECCE4 /* CanvasFunzie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7E58DE2078517D007ECCE4 /* Build configuration list for PBXNativeTarget "CanvasFunzie" */;
+			buildPhases = (
+				FF7E58B22078517C007ECCE4 /* Sources */,
+				FF7E58B32078517C007ECCE4 /* Frameworks */,
+				FF7E58B42078517C007ECCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanvasFunzie;
+			productName = CanvasFunzie;
+			productReference = FF7E58B62078517C007ECCE4 /* CanvasFunzie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF7E58C92078517D007ECCE4 /* CanvasFunzieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7E58E12078517D007ECCE4 /* Build configuration list for PBXNativeTarget "CanvasFunzieTests" */;
+			buildPhases = (
+				FF7E58C62078517D007ECCE4 /* Sources */,
+				FF7E58C72078517D007ECCE4 /* Frameworks */,
+				FF7E58C82078517D007ECCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF7E58CC2078517D007ECCE4 /* PBXTargetDependency */,
+			);
+			name = CanvasFunzieTests;
+			productName = CanvasFunzieTests;
+			productReference = FF7E58CA2078517D007ECCE4 /* CanvasFunzieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF7E58D42078517D007ECCE4 /* CanvasFunzieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7E58E42078517D007ECCE4 /* Build configuration list for PBXNativeTarget "CanvasFunzieUITests" */;
+			buildPhases = (
+				FF7E58D12078517D007ECCE4 /* Sources */,
+				FF7E58D22078517D007ECCE4 /* Frameworks */,
+				FF7E58D32078517D007ECCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF7E58D72078517D007ECCE4 /* PBXTargetDependency */,
+			);
+			name = CanvasFunzieUITests;
+			productName = CanvasFunzieUITests;
+			productReference = FF7E58D52078517D007ECCE4 /* CanvasFunzieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF7E58AE2078517C007ECCE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Melissa Phuong Nguyen";
+				TargetAttributes = {
+					FF7E58B52078517C007ECCE4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FF7E58C92078517D007ECCE4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FF7E58B52078517C007ECCE4;
+					};
+					FF7E58D42078517D007ECCE4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FF7E58B52078517C007ECCE4;
+					};
+				};
+			};
+			buildConfigurationList = FF7E58B12078517C007ECCE4 /* Build configuration list for PBXProject "CanvasFunzie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF7E58AD2078517C007ECCE4;
+			productRefGroup = FF7E58B72078517C007ECCE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF7E58B52078517C007ECCE4 /* CanvasFunzie */,
+				FF7E58C92078517D007ECCE4 /* CanvasFunzieTests */,
+				FF7E58D42078517D007ECCE4 /* CanvasFunzieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF7E58B42078517C007ECCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7E58C42078517D007ECCE4 /* LaunchScreen.storyboard in Resources */,
+				FF7E58C12078517D007ECCE4 /* Assets.xcassets in Resources */,
+				FF7E58BF2078517C007ECCE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E58C82078517D007ECCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E58D32078517D007ECCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF7E58B22078517C007ECCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7E58BC2078517C007ECCE4 /* ViewController.swift in Sources */,
+				FF7E58BA2078517C007ECCE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E58C62078517D007ECCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7E58CF2078517D007ECCE4 /* CanvasFunzieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E58D12078517D007ECCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7E58DA2078517D007ECCE4 /* CanvasFunzieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF7E58CC2078517D007ECCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7E58B52078517C007ECCE4 /* CanvasFunzie */;
+			targetProxy = FF7E58CB2078517D007ECCE4 /* PBXContainerItemProxy */;
+		};
+		FF7E58D72078517D007ECCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7E58B52078517C007ECCE4 /* CanvasFunzie */;
+			targetProxy = FF7E58D62078517D007ECCE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF7E58BD2078517C007ECCE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7E58BE2078517C007ECCE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF7E58C22078517D007ECCE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7E58C32078517D007ECCE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF7E58DC2078517D007ECCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF7E58DD2078517D007ECCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF7E58DF2078517D007ECCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanvasFunzie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.melissanguyen.CanvasFunzie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF7E58E02078517D007ECCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanvasFunzie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.melissanguyen.CanvasFunzie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF7E58E22078517D007ECCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanvasFunzieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.melissanguyen.CanvasFunzieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanvasFunzie.app/CanvasFunzie";
+			};
+			name = Debug;
+		};
+		FF7E58E32078517D007ECCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanvasFunzieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.melissanguyen.CanvasFunzieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanvasFunzie.app/CanvasFunzie";
+			};
+			name = Release;
+		};
+		FF7E58E52078517D007ECCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanvasFunzieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.melissanguyen.CanvasFunzieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CanvasFunzie;
+			};
+			name = Debug;
+		};
+		FF7E58E62078517D007ECCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanvasFunzieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.melissanguyen.CanvasFunzieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CanvasFunzie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF7E58B12078517C007ECCE4 /* Build configuration list for PBXProject "CanvasFunzie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7E58DC2078517D007ECCE4 /* Debug */,
+				FF7E58DD2078517D007ECCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7E58DE2078517D007ECCE4 /* Build configuration list for PBXNativeTarget "CanvasFunzie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7E58DF2078517D007ECCE4 /* Debug */,
+				FF7E58E02078517D007ECCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7E58E12078517D007ECCE4 /* Build configuration list for PBXNativeTarget "CanvasFunzieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7E58E22078517D007ECCE4 /* Debug */,
+				FF7E58E32078517D007ECCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7E58E42078517D007ECCE4 /* Build configuration list for PBXNativeTarget "CanvasFunzieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7E58E52078517D007ECCE4 /* Debug */,
+				FF7E58E62078517D007ECCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF7E58AE2078517C007ECCE4 /* Project object */;
+}
