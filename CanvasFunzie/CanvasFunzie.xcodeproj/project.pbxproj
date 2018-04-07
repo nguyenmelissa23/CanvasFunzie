@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FF7E58BA2078517C007ECCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58B92078517C007ECCE4 /* AppDelegate.swift */; };
-		FF7E58BC2078517C007ECCE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58BB2078517C007ECCE4 /* ViewController.swift */; };
 		FF7E58BF2078517C007ECCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E58BD2078517C007ECCE4 /* Main.storyboard */; };
 		FF7E58C12078517D007ECCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7E58C02078517D007ECCE4 /* Assets.xcassets */; };
 		FF7E58C42078517D007ECCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E58C22078517D007ECCE4 /* LaunchScreen.storyboard */; };
 		FF7E58CF2078517D007ECCE4 /* CanvasFunzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58CE2078517D007ECCE4 /* CanvasFunzieTests.swift */; };
 		FF7E58DA2078517D007ECCE4 /* CanvasFunzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58D92078517D007ECCE4 /* CanvasFunzieUITests.swift */; };
+		FF7E58E820785370007ECCE4 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E58E720785370007ECCE4 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		FF7E58B62078517C007ECCE4 /* CanvasFunzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasFunzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7E58B92078517C007ECCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF7E58BB2078517C007ECCE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF7E58BE2078517C007ECCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF7E58C02078517D007ECCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF7E58C32078517D007ECCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		FF7E58D52078517D007ECCE4 /* CanvasFunzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasFunzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7E58D92078517D007ECCE4 /* CanvasFunzieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasFunzieUITests.swift; sourceTree = "<group>"; };
 		FF7E58DB2078517D007ECCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7E58E720785370007ECCE4 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		FF7E58B82078517C007ECCE4 /* CanvasFunzie */ = {
 			isa = PBXGroup;
 			children = (
+				FF7E58E720785370007ECCE4 /* CanvasViewController.swift */,
 				FF7E58B92078517C007ECCE4 /* AppDelegate.swift */,
-				FF7E58BB2078517C007ECCE4 /* ViewController.swift */,
 				FF7E58BD2078517C007ECCE4 /* Main.storyboard */,
 				FF7E58C02078517D007ECCE4 /* Assets.xcassets */,
 				FF7E58C22078517D007ECCE4 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7E58BC2078517C007ECCE4 /* ViewController.swift in Sources */,
+				FF7E58E820785370007ECCE4 /* CanvasViewController.swift in Sources */,
 				FF7E58BA2078517C007ECCE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
