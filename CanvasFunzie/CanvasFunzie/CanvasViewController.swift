@@ -75,24 +75,24 @@ class CanvasViewController: UIViewController {
     
     // The Pan Gesture
     func createPanGestureRecognizer(targetView: UIImageView) {
-        var panGesture = UIPanGestureRecognizer(target: self, action:(Selector(("handlePanGesture:"))))
+        var panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         targetView.addGestureRecognizer(panGesture)
     }
     
-    @objc func handlePanGesture(panGesture: UIPanGestureRecognizer) {
+    @objc func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
         // get translation
-        var translation = panGesture.translation(in: view)
-        panGesture.setTranslation(newlyCreatedFaceOriginalCenter, in: view)
-        if panGesture.state == UIGestureRecognizerState.began {
+        var translation = gesture.translation(in: view)
+        gesture.setTranslation(newlyCreatedFaceOriginalCenter, in: view)
+        if gesture.state == .began {
             // add something you want to happen when the Label Panning has started
-            newlyCreatedFace = panGesture.view as! UIImageView
+            newlyCreatedFace = gesture.view as! UIImageView
             newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
             
-        }else if panGesture.state == UIGestureRecognizerState.changed {
+        }else if gesture.state == .changed {
             // add something you want to happen when the Label Panning has changed
             newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
             
-        }else if panGesture.state == UIGestureRecognizerState.ended {
+        }else if gesture.state == .ended {
             // add something you want to happen when the Label Panning has been ended
         }
     }
