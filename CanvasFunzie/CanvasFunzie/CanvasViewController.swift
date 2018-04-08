@@ -44,7 +44,9 @@ class CanvasViewController: UIViewController {
             if (velocity.y > 0 ){
                 trayView.center = trayDown
             } else {
-                trayView.center = trayUp
+                UIView.animate(withDuration: 0.6, animations: {
+                    self.trayView.center = self.trayUp!
+                })
             }
         }
         
@@ -56,14 +58,42 @@ class CanvasViewController: UIViewController {
         if (sender.state == .began){
             let imageView = sender.view as! UIImageView
             newlyCreatedFace = UIImageView(image: imageView.image)
+            newlyCreatedFace.isUserInteractionEnabled = true
             view.addSubview(newlyCreatedFace)
+            
             newlyCreatedFace.center = imageView.center
             newlyCreatedFace.center.y += trayView.frame.origin.y
             newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
+            createPanGestureRecognizer(targetView: newlyCreatedFace)
+            
         } else if (sender.state == .changed){
             newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
         } else if (sender.state == .ended){
             
+        }
+    }
+    
+    // The Pan Gesture
+    func createPanGestureRecognizer(targetView: UIImageView) {
+        var panGesture = UIPanGestureRecognizer(target: self, action:(Selector(("handlePanGesture:"))))
+        targetView.addGestureRecognizer(panGesture)
+    }
+    
+    @objc func handlePanGesture(panGesture: UIPanGestureRecognizer) {
+        // get translation
+        var translation = panGesture.translation(in: view)
+        panGesture.setTranslation(newlyCreatedFaceOriginalCenter, in: view)
+        if panGesture.state == UIGestureRecognizerState.began {
+            // add something you want to happen when the Label Panning has started
+            newlyCreatedFace = panGesture.view as! UIImageView
+            newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
+            
+        }else if panGesture.state == UIGestureRecognizerState.changed {
+            // add something you want to happen when the Label Panning has changed
+            newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
+            
+        }else if panGesture.state == UIGestureRecognizerState.ended {
+            // add something you want to happen when the Label Panning has been ended
         }
     }
     
