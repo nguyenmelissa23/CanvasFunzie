@@ -2,17 +2,17 @@
 
 **Canvas Funzie** is an app that allows users to use gestures in order to create fun pictures using a variety of images.
 
-Time spent: **X** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] Add and Configure View Elements (+1pt)
-- [ ] User can use a pan gesture to move the position of the tray (+1pt)
-- [ ] The tray will continue to the up or down position based on the direction the user was last panning (+1pt)
-- [ ] User can use a pan gesture to drag faces from the image tray to the canvas (+1pt)
-- [ ] User can pan faces on the canvas (+1pt)
+- [x] Add and Configure View Elements (+1pt)
+- [x] User can use a pan gesture to move the position of the tray (+1pt)
+- [x] The tray will continue to the up or down position based on the direction the user was last panning (+1pt)
+- [x] User can use a pan gesture to drag faces from the image tray to the canvas (+1pt)
+- [x] User can pan faces on the canvas (+1pt)
 
 The following **stretch** user stories are implemented:
 
@@ -36,8 +36,8 @@ The following **stretch** user stories are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. See what other user stories people did!
+2. nothing else
 
 ## Video Walkthrough
 
@@ -49,11 +49,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Describe any challenges encountered while building the app: nothing much
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2018] [Jigyasaa Sood and Melissa Nguyen]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
