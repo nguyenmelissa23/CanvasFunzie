@@ -60,16 +60,17 @@ class CanvasViewController: UIViewController {
             newlyCreatedFace = UIImageView(image: imageView.image)
             newlyCreatedFace.isUserInteractionEnabled = true
             view.addSubview(newlyCreatedFace)
-            
             newlyCreatedFace.center = imageView.center
             newlyCreatedFace.center.y += trayView.frame.origin.y
+            
+            
             newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
             createPanGestureRecognizer(targetView: newlyCreatedFace)
             
         } else if (sender.state == .changed){
             newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
         } else if (sender.state == .ended){
-            
+            //newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
         }
     }
     
@@ -82,8 +83,11 @@ class CanvasViewController: UIViewController {
     @objc func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
         // get translation
         var translation = gesture.translation(in: view)
-        gesture.setTranslation(newlyCreatedFaceOriginalCenter, in: view)
+        
+        //gesture.setTranslation(newlyCreatedFaceOriginalCenter, in: view) -->this was the line that caused the error
+        
         if gesture.state == .began {
+            newlyCreatedFace.isUserInteractionEnabled = true
             // add something you want to happen when the Label Panning has started
             newlyCreatedFace = gesture.view as! UIImageView
             newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
@@ -94,6 +98,7 @@ class CanvasViewController: UIViewController {
             
         }else if gesture.state == .ended {
             // add something you want to happen when the Label Panning has been ended
+            //newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
         }
     }
     
